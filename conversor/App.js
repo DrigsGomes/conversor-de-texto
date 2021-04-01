@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, StyleSheet, Button, TextInput} from 'react-native';
+import {View, StyleSheet, Button, TextInput, TouchableOpacity} from 'react-native';
 import * as Speech from 'expo-speech';
 
 
@@ -26,7 +26,7 @@ export default function App(){
       />
 
       <Button
-      style = {styles.button}
+      color="#089"
       title='Ouvir'
       onPress={speek}
       />
@@ -53,6 +53,6 @@ const styles = StyleSheet.create({
     margin:10,
     color:'#000',
     fontSize:20,
-  },
+  }
 
 });
